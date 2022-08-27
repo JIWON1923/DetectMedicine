@@ -26,7 +26,10 @@
                                     <constraint firstAttribute="height" constant="150" id="CmV-k0-MQa"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="인식하기"/>
+                                <connections>
+                                    <action selector="didTapSnapButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2Sk-1f-Fip"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -41,6 +44,9 @@
                             <constraint firstItem="ODn-Tv-bIm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="zT8-bU-K3t"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="cameraView" destination="ODn-Tv-bIm" id="tLK-Pa-0ye"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
