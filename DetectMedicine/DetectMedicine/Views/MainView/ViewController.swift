@@ -7,6 +7,8 @@
 
 import UIKit
 import AVFoundation
+import MLKitTextRecognitionKorean
+import MLKit
 
 class ViewController: UIViewController {
     
@@ -35,6 +37,23 @@ class ViewController: UIViewController {
         return true
     }
     
+    // func recognizeText(_ image: UIImage) {
+    func recognizeText() {
+        let image = UIImage(named: "tyrenol.jpeg")!
+        let options = KoreanTextRecognizerOptions()
+        let koreanTextRecognizer = TextRecognizer.textRecognizer(options: options)
+        let visionImage = VisionImage(image: image)
+        visionImage.orientation = image.imageOrientation
+        
+        koreanTextRecognizer.process(visionImage) { result, error in
+            guard error == nil, let result = result else {
+                print(error?.localizedDescription)
+                return
+            }
+            print(result.text)
+        }
+    }
+    
     @IBAction func didTapSnapButton(_ sender: Any) {
         print("tapped!")
         if session.isRunning {
@@ -45,6 +64,8 @@ class ViewController: UIViewController {
             }
             
         }
+//        recognizeText(cameraView.takeSnapshot())
+        recognizeText()
     }
     
 }

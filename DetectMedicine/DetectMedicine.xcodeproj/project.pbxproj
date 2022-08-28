@@ -120,7 +120,6 @@
 				53B6F4235AAFA943DBAD2834 /* Pods-DetectMedicine.debug.xcconfig */,
 				DABF5AC5DE5610F937D9DAB2 /* Pods-DetectMedicine.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
