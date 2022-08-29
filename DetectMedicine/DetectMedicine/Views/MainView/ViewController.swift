@@ -26,11 +26,22 @@ class ViewController: UIViewController {
         return button
     }()
     
+    // result View
+    private let resultView: UIView = {
+        let view = UIView()
+        view.layer.cornerRadius = 10
+        view.layer.backgroundColor = UIColor.white.cgColor
+        view.translatesAutoresizingMaskIntoConstraints = false
+        view.isHidden = true
+        return view
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .black
         view.layer.addSublayer(previewLayer)
         view.addSubview(shutterButton)
+        view.addSubview(resultView)
         checkCameraPermissions()
         
         shutterButton.addTarget(self, action: #selector(didTapTakePhoto), for: .touchUpInside)
@@ -40,6 +51,13 @@ class ViewController: UIViewController {
         super.viewDidLayoutSubviews()
         previewLayer.frame = view.bounds
         shutterButton.center = CGPoint(x: view.frame.size.width / 2, y: view.frame.size.height - 100)
+        
+        NSLayoutConstraint.activate([
+            resultView.heightAnchor.constraint(equalToConstant: 300),
+            resultView.leadingAnchor.constraint(equalTo: self.view.leadingAnchor, constant: 20),
+            resultView.trailingAnchor.constraint(equalTo: self.view.trailingAnchor, constant: -20),
+            resultView.topAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.topAnchor, constant: 30)
+        ])
     }
     
     // check permission
@@ -109,6 +127,7 @@ class ViewController: UIViewController {
     
     @objc private func didTapTakePhoto() {
         output.capturePhoto(with: AVCapturePhotoSettings(), delegate: self)
+        resultView.isHidden = false
     }
     
 }
