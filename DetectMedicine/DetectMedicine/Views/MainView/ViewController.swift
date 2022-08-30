@@ -49,6 +49,7 @@ class ViewController: UIViewController {
         view.addSubview(shutterButton)
         checkCameraPermissions()
         setupView()
+        setVoiceOver()
         shutterButton.addTarget(self, action: #selector(didTapTakePhoto), for: .touchUpInside)
     }
     
@@ -120,8 +121,11 @@ class ViewController: UIViewController {
                 print(error?.localizedDescription as Any)
                 return
             }
-            dump(result.text)
+            UIAccessibility.post(notification: .announcement, argument: result.text)
+            self.resultView.text = result.text
+            self.resultView.isHidden = false
         }
+         
     }
     
     private func setupView() {
@@ -134,9 +138,16 @@ class ViewController: UIViewController {
         ])
     }
     
+    private func setVoiceOver() {
+        shutterButton.accessibilityLabel = "사진찍기"
+        shutterButton.accessibilityHint = "이중탭하면 약의 사진을 촬영합니다."
+        resultView.accessibilityLabel = "인식 결과"
+        resultView.isAccessibilityElement = true
+        resultView.accessibilityTraits = .staticText
+    }
+    
     @objc private func didTapTakePhoto() {
         output.capturePhoto(with: AVCapturePhotoSettings(), delegate: self)
-        resultView.isHidden = false
     }
     
 }
