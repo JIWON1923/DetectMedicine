@@ -12,6 +12,8 @@ import MLKit
 
 class ViewController: UIViewController {
     
+    //MARK: - components
+    
     // capture
     var session: AVCaptureSession?
     let output = AVCapturePhotoOutput()
@@ -25,14 +27,28 @@ class ViewController: UIViewController {
         button.layer.borderColor = UIColor.white.cgColor
         return button
     }()
+
+    // result view
+    private let resultView: UITextView = {
+       let textView = UITextView()
+        textView.translatesAutoresizingMaskIntoConstraints = false
+        textView.layer.cornerRadius = 10
+        textView.backgroundColor = .white
+        textView.text = "description\ndescription\ndescription\ndescription\ndescription\ndescription\ndescription\ndescription\ndescription\ndescription\ndescription\ndescription\ndescription\ndescription\ndescription\ndescription\ndescription\ndescription\ndescription\ndescription\ndescription\ndescription\ndescription\n"
+        textView.font = UIFont.systemFont(ofSize: 17)
+        textView.isHidden = true
+        return textView
+    }()
     
+    
+    // MARK: - Life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .black
         view.layer.addSublayer(previewLayer)
         view.addSubview(shutterButton)
         checkCameraPermissions()
-        
+        setupView()
         shutterButton.addTarget(self, action: #selector(didTapTakePhoto), for: .touchUpInside)
     }
     
@@ -42,6 +58,7 @@ class ViewController: UIViewController {
         shutterButton.center = CGPoint(x: view.frame.size.width / 2, y: view.frame.size.height - 100)
     }
     
+    // MARK: - Custom functions
     // check permission
     private func checkCameraPermissions() {
         switch AVCaptureDevice.authorizationStatus(for: .video) {
@@ -92,7 +109,7 @@ class ViewController: UIViewController {
         }
     }
     
-     func recognizeText(_ image: UIImage) {
+     private func recognizeText(_ image: UIImage) {
         let options = KoreanTextRecognizerOptions()
         let koreanTextRecognizer = TextRecognizer.textRecognizer(options: options)
         let visionImage = VisionImage(image: image)
@@ -107,8 +124,19 @@ class ViewController: UIViewController {
         }
     }
     
+    private func setupView() {
+        view.addSubview(resultView)
+        NSLayoutConstraint.activate([
+            resultView.heightAnchor.constraint(equalToConstant: 300),
+            resultView.leadingAnchor.constraint(equalTo: self.view.leadingAnchor, constant: 20),
+            resultView.trailingAnchor.constraint(equalTo: self.view.trailingAnchor, constant: -20),
+            resultView.topAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.topAnchor, constant: 30)
+        ])
+    }
+    
     @objc private func didTapTakePhoto() {
         output.capturePhoto(with: AVCapturePhotoSettings(), delegate: self)
+        resultView.isHidden = false
     }
     
 }
