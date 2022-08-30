@@ -14,7 +14,7 @@ class ViewController: UIViewController {
     
     // MARK: - Model
     let imagePredictor = DetectMedicineModel()
-    let predictionsToShow = 2
+    let predictionsToShow = 1
     //MARK: - components
     
     // capture
@@ -153,9 +153,28 @@ class ViewController: UIViewController {
     
     func updatePredictionLabel(_ message: String) {
         DispatchQueue.main.async {
-            self.resultView.text = message
+            self.detectionResult(message)
             self.resultView.isHidden = false
+            print(message)
         }
+    }
+    
+    private func detectionResult(_ message: String) {
+        var result = ""
+        switch message {
+        case "geborin":
+            result = "게보린입니다."
+        case "gasAndFree":
+            result = "까스앤 프리입니다.\n 씹어서 복용하십시오. 1회 1정, 1일 3회 식후 또는 취침 시 복용하십시오."
+        case "beajae":
+            result = "소화제 종류인 베아제입니다. \n 물과 함께 복용하십시오"
+        case "tyrenol500":
+            result = "타이레놀 500mg입니다.\n 진통제, 해열제 효과가 있으며, 만 12세 이상의 소아 및 성인은 1회 1정 또는 2정씩, 1일 3회에서 4회 복용하십시오. \n최대 8정을 초과하여 복용하지 마십시오."
+        default:
+            break
+        }
+        self.resultView.text = result
+        UIAccessibility.post(notification: .announcement, argument: result)
     }
     
 }
@@ -200,8 +219,7 @@ extension ViewController: AVCapturePhotoCaptureDelegate {
             if let firstComma = name.firstIndex(of: ",") {
                 name = String(name.prefix(upTo: firstComma))
             }
-            
-            return "\(name) - \(prediction.confidencePercentage)%"
+            return name
         }
         return topPredictions
     }
