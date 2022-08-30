@@ -11,9 +11,13 @@
 		87B62C6A28B9E943006E3C31 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B62C6928B9E943006E3C31 /* SceneDelegate.swift */; };
 		87B62C6C28B9E943006E3C31 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B62C6B28B9E943006E3C31 /* ViewController.swift */; };
 		87B62C6F28B9E943006E3C31 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87B62C6D28B9E943006E3C31 /* Main.storyboard */; };
-		87B62C7128B9E944006E3C31 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87B62C7028B9E944006E3C31 /* Assets.xcassets */; };
 		87B62C7428B9E944006E3C31 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87B62C7228B9E944006E3C31 /* LaunchScreen.storyboard */; };
 		87D02EC128BDF5C2008045DA /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D02EC028BDF5C2008045DA /* ResultView.swift */; };
+		87D02ECA28BE6F29008045DA /* DetectMedicineModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D02EC928BE6F29008045DA /* DetectMedicineModel.swift */; };
+		87D02ECC28BE8F51008045DA /* CGImagePropertyOrientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D02ECB28BE8F51008045DA /* CGImagePropertyOrientation.swift */; };
+		87D02ECE28BE8FFD008045DA /* VNClassificationObsefvation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D02ECD28BE8FFD008045DA /* VNClassificationObsefvation.swift */; };
+		87D02ED228BE93DD008045DA /* DetectMedicine.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 87D02ED128BE93DD008045DA /* DetectMedicine.mlmodel */; };
+		87D02ED428BE9EDD008045DA /* ImagePredictor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D02ED328BE9EDD008045DA /* ImagePredictor.swift */; };
 		E0B9A8A536CA284D9276F015 /* Pods_DetectMedicine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADC9F937AAB6F2D533E4066E /* Pods_DetectMedicine.framework */; };
 /* End PBXBuildFile section */
 
@@ -28,6 +32,11 @@
 		87B62C7328B9E944006E3C31 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		87B62C7528B9E944006E3C31 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		87D02EC028BDF5C2008045DA /* ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultView.swift; sourceTree = "<group>"; };
+		87D02EC928BE6F29008045DA /* DetectMedicineModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetectMedicineModel.swift; sourceTree = "<group>"; };
+		87D02ECB28BE8F51008045DA /* CGImagePropertyOrientation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGImagePropertyOrientation.swift; sourceTree = "<group>"; };
+		87D02ECD28BE8FFD008045DA /* VNClassificationObsefvation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VNClassificationObsefvation.swift; sourceTree = "<group>"; };
+		87D02ED128BE93DD008045DA /* DetectMedicine.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = DetectMedicine.mlmodel; sourceTree = "<group>"; };
+		87D02ED328BE9EDD008045DA /* ImagePredictor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePredictor.swift; sourceTree = "<group>"; };
 		ADC9F937AAB6F2D533E4066E /* Pods_DetectMedicine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DetectMedicine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DABF5AC5DE5610F937D9DAB2 /* Pods-DetectMedicine.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DetectMedicine.release.xcconfig"; path = "Target Support Files/Pods-DetectMedicine/Pods-DetectMedicine.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -76,7 +85,7 @@
 				87B62C7C28BA0999006E3C31 /* LifeCycle */,
 				87B62C7E28BA0A21006E3C31 /* Extensions */,
 				87B62C7D28BA09EC006E3C31 /* Views */,
-				87D02EBF28BDF5A7008045DA /* ResultView */,
+				87D02EC228BE6AEF008045DA /* Models */,
 				87B62C7028B9E944006E3C31 /* Assets.xcassets */,
 				87B62C7528B9E944006E3C31 /* Info.plist */,
 			);
@@ -106,6 +115,7 @@
 			children = (
 				87B62C7228B9E944006E3C31 /* LaunchScreen.storyboard */,
 				87B62C7B28BA0916006E3C31 /* MainView */,
+				87D02EBF28BDF5A7008045DA /* ResultView */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -113,6 +123,8 @@
 		87B62C7E28BA0A21006E3C31 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				87D02ECB28BE8F51008045DA /* CGImagePropertyOrientation.swift */,
+				87D02ECD28BE8FFD008045DA /* VNClassificationObsefvation.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -123,6 +135,16 @@
 				87D02EC028BDF5C2008045DA /* ResultView.swift */,
 			);
 			path = ResultView;
+			sourceTree = "<group>";
+		};
+		87D02EC228BE6AEF008045DA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				87D02ED128BE93DD008045DA /* DetectMedicine.mlmodel */,
+				87D02EC928BE6F29008045DA /* DetectMedicineModel.swift */,
+				87D02ED328BE9EDD008045DA /* ImagePredictor.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		A70B44AB1B36EB2102EF3B00 /* Pods */ = {
@@ -196,7 +218,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				87B62C7428B9E944006E3C31 /* LaunchScreen.storyboard in Resources */,
-				87B62C7128B9E944006E3C31 /* Assets.xcassets in Resources */,
 				87B62C6F28B9E943006E3C31 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -270,7 +291,12 @@
 				87B62C6C28B9E943006E3C31 /* ViewController.swift in Sources */,
 				87D02EC128BDF5C2008045DA /* ResultView.swift in Sources */,
 				87B62C6828B9E943006E3C31 /* AppDelegate.swift in Sources */,
+				87D02ECE28BE8FFD008045DA /* VNClassificationObsefvation.swift in Sources */,
+				87D02ECA28BE6F29008045DA /* DetectMedicineModel.swift in Sources */,
+				87D02ED228BE93DD008045DA /* DetectMedicine.mlmodel in Sources */,
 				87B62C6A28B9E943006E3C31 /* SceneDelegate.swift in Sources */,
+				87D02ED428BE9EDD008045DA /* ImagePredictor.swift in Sources */,
+				87D02ECC28BE8F51008045DA /* CGImagePropertyOrientation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -12,6 +12,9 @@ import MLKit
 
 class ViewController: UIViewController {
     
+    // MARK: - Model
+    let imagePredictor = DetectMedicineModel()
+    let predictionsToShow = 2
     //MARK: - components
     
     // capture
@@ -34,7 +37,6 @@ class ViewController: UIViewController {
         textView.translatesAutoresizingMaskIntoConstraints = false
         textView.layer.cornerRadius = 10
         textView.backgroundColor = .white
-        textView.text = "description\ndescription\ndescription\ndescription\ndescription\ndescription\ndescription\ndescription\ndescription\ndescription\ndescription\ndescription\ndescription\ndescription\ndescription\ndescription\ndescription\ndescription\ndescription\ndescription\ndescription\ndescription\ndescription\n"
         textView.font = UIFont.systemFont(ofSize: 17)
         textView.isHidden = true
         return textView
@@ -123,7 +125,6 @@ class ViewController: UIViewController {
             }
             UIAccessibility.post(notification: .announcement, argument: result.text)
             self.resultView.text = result.text
-            self.resultView.isHidden = false
         }
          
     }
@@ -150,6 +151,13 @@ class ViewController: UIViewController {
         output.capturePhoto(with: AVCapturePhotoSettings(), delegate: self)
     }
     
+    func updatePredictionLabel(_ message: String) {
+        DispatchQueue.main.async {
+            self.resultView.text = message
+            self.resultView.isHidden = false
+        }
+    }
+    
 }
 
 extension ViewController: AVCapturePhotoCaptureDelegate {
@@ -160,8 +168,41 @@ extension ViewController: AVCapturePhotoCaptureDelegate {
         
         session?.stopRunning()
         
-        let image = UIImage(data: data)
-        recognizeText(image!)
+        let image = UIImage(data: data)!
+        classifyImage(image)
         session?.startRunning()
+    }
+    
+    private func classifyImage(_ image: UIImage) {
+        do {
+            try self.imagePredictor.makePredictions(for: image,
+                                                    completionHandler: imagePredictionHandler)
+        } catch {
+            print("Vision was unable to make a prediction...\n\n\(error.localizedDescription)")
+        }
+    }
+    
+    private func imagePredictionHandler(_ predictions: [DetectMedicineModel.Prediction]?) {
+        guard let predictions = predictions else {
+            updatePredictionLabel("No predictions. (Check console log.)")
+            return
+        }
+
+        let formattedPredictions = formatPredictions(predictions)
+
+        let predictionString = formattedPredictions.joined(separator: "\n")
+        updatePredictionLabel(predictionString)
+    }
+    
+    private func formatPredictions(_ predictions: [DetectMedicineModel.Prediction]) -> [String] {
+        let topPredictions: [String] = predictions.prefix(predictionsToShow).map { prediction in
+            var name = prediction.classification
+            if let firstComma = name.firstIndex(of: ",") {
+                name = String(name.prefix(upTo: firstComma))
+            }
+            
+            return "\(name) - \(prediction.confidencePercentage)%"
+        }
+        return topPredictions
     }
 }
