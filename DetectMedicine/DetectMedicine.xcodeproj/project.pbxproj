@@ -11,11 +11,22 @@
 		87B62C6A28B9E943006E3C31 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B62C6928B9E943006E3C31 /* SceneDelegate.swift */; };
 		87B62C6C28B9E943006E3C31 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B62C6B28B9E943006E3C31 /* ViewController.swift */; };
 		87B62C6F28B9E943006E3C31 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87B62C6D28B9E943006E3C31 /* Main.storyboard */; };
-		87B62C7128B9E944006E3C31 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87B62C7028B9E944006E3C31 /* Assets.xcassets */; };
 		87B62C7428B9E944006E3C31 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87B62C7228B9E944006E3C31 /* LaunchScreen.storyboard */; };
+		87C2EC9728BF4A6D00D83D04 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87B62C7028B9E944006E3C31 /* Assets.xcassets */; };
+		87C2EC9A28BFC35200D83D04 /* FirstPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87C2EC9928BFC35200D83D04 /* FirstPage.storyboard */; };
+		87C2EC9C28BFC4AA00D83D04 /* FirstPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87C2EC9B28BFC4AA00D83D04 /* FirstPageViewController.swift */; };
+		87C2ECA028BFC84900D83D04 /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87C2EC9F28BFC84900D83D04 /* Storage.swift */; };
+		87D02EC128BDF5C2008045DA /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D02EC028BDF5C2008045DA /* ResultView.swift */; };
+		87D02ECA28BE6F29008045DA /* DetectMedicineModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D02EC928BE6F29008045DA /* DetectMedicineModel.swift */; };
+		87D02ECC28BE8F51008045DA /* CGImagePropertyOrientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D02ECB28BE8F51008045DA /* CGImagePropertyOrientation.swift */; };
+		87D02ECE28BE8FFD008045DA /* VNClassificationObsefvation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D02ECD28BE8FFD008045DA /* VNClassificationObsefvation.swift */; };
+		87D02ED228BE93DD008045DA /* DetectMedicine.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 87D02ED128BE93DD008045DA /* DetectMedicine.mlmodel */; };
+		87D02ED428BE9EDD008045DA /* ImagePredictor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D02ED328BE9EDD008045DA /* ImagePredictor.swift */; };
+		E0B9A8A536CA284D9276F015 /* Pods_DetectMedicine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADC9F937AAB6F2D533E4066E /* Pods_DetectMedicine.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		53B6F4235AAFA943DBAD2834 /* Pods-DetectMedicine.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DetectMedicine.debug.xcconfig"; path = "Target Support Files/Pods-DetectMedicine/Pods-DetectMedicine.debug.xcconfig"; sourceTree = "<group>"; };
 		87B62C6428B9E943006E3C31 /* DetectMedicine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DetectMedicine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		87B62C6728B9E943006E3C31 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		87B62C6928B9E943006E3C31 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +35,17 @@
 		87B62C7028B9E944006E3C31 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		87B62C7328B9E944006E3C31 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		87B62C7528B9E944006E3C31 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		87C2EC9928BFC35200D83D04 /* FirstPage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FirstPage.storyboard; sourceTree = "<group>"; };
+		87C2EC9B28BFC4AA00D83D04 /* FirstPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstPageViewController.swift; sourceTree = "<group>"; };
+		87C2EC9F28BFC84900D83D04 /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
+		87D02EC028BDF5C2008045DA /* ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultView.swift; sourceTree = "<group>"; };
+		87D02EC928BE6F29008045DA /* DetectMedicineModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetectMedicineModel.swift; sourceTree = "<group>"; };
+		87D02ECB28BE8F51008045DA /* CGImagePropertyOrientation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGImagePropertyOrientation.swift; sourceTree = "<group>"; };
+		87D02ECD28BE8FFD008045DA /* VNClassificationObsefvation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VNClassificationObsefvation.swift; sourceTree = "<group>"; };
+		87D02ED128BE93DD008045DA /* DetectMedicine.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = DetectMedicine.mlmodel; sourceTree = "<group>"; };
+		87D02ED328BE9EDD008045DA /* ImagePredictor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePredictor.swift; sourceTree = "<group>"; };
+		ADC9F937AAB6F2D533E4066E /* Pods_DetectMedicine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DetectMedicine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DABF5AC5DE5610F937D9DAB2 /* Pods-DetectMedicine.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DetectMedicine.release.xcconfig"; path = "Target Support Files/Pods-DetectMedicine/Pods-DetectMedicine.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +53,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0B9A8A536CA284D9276F015 /* Pods_DetectMedicine.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5507FB82B78124F7646D4082 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ADC9F937AAB6F2D533E4066E /* Pods_DetectMedicine.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		87B62C5B28B9E943006E3C31 = {
 			isa = PBXGroup;
 			children = (
 				87B62C6628B9E943006E3C31 /* DetectMedicine */,
 				87B62C6528B9E943006E3C31 /* Products */,
+				A70B44AB1B36EB2102EF3B00 /* Pods */,
+				5507FB82B78124F7646D4082 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +89,89 @@
 		87B62C6628B9E943006E3C31 /* DetectMedicine */ = {
 			isa = PBXGroup;
 			children = (
-				87B62C6728B9E943006E3C31 /* AppDelegate.swift */,
-				87B62C6928B9E943006E3C31 /* SceneDelegate.swift */,
-				87B62C6B28B9E943006E3C31 /* ViewController.swift */,
-				87B62C6D28B9E943006E3C31 /* Main.storyboard */,
+				87B62C7C28BA0999006E3C31 /* LifeCycle */,
+				87B62C7E28BA0A21006E3C31 /* Extensions */,
+				87B62C7D28BA09EC006E3C31 /* Views */,
+				87D02EC228BE6AEF008045DA /* Models */,
 				87B62C7028B9E944006E3C31 /* Assets.xcassets */,
-				87B62C7228B9E944006E3C31 /* LaunchScreen.storyboard */,
 				87B62C7528B9E944006E3C31 /* Info.plist */,
 			);
 			path = DetectMedicine;
+			sourceTree = "<group>";
+		};
+		87B62C7B28BA0916006E3C31 /* MainView */ = {
+			isa = PBXGroup;
+			children = (
+				87B62C6D28B9E943006E3C31 /* Main.storyboard */,
+				87B62C6B28B9E943006E3C31 /* ViewController.swift */,
+			);
+			path = MainView;
+			sourceTree = "<group>";
+		};
+		87B62C7C28BA0999006E3C31 /* LifeCycle */ = {
+			isa = PBXGroup;
+			children = (
+				87B62C6728B9E943006E3C31 /* AppDelegate.swift */,
+				87B62C6928B9E943006E3C31 /* SceneDelegate.swift */,
+			);
+			path = LifeCycle;
+			sourceTree = "<group>";
+		};
+		87B62C7D28BA09EC006E3C31 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				87B62C7228B9E944006E3C31 /* LaunchScreen.storyboard */,
+				87B62C7B28BA0916006E3C31 /* MainView */,
+				87D02EBF28BDF5A7008045DA /* ResultView */,
+				87C2EC9828BFC32900D83D04 /* Onboarding */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		87B62C7E28BA0A21006E3C31 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				87D02ECB28BE8F51008045DA /* CGImagePropertyOrientation.swift */,
+				87D02ECD28BE8FFD008045DA /* VNClassificationObsefvation.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		87C2EC9828BFC32900D83D04 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				87C2EC9928BFC35200D83D04 /* FirstPage.storyboard */,
+				87C2EC9B28BFC4AA00D83D04 /* FirstPageViewController.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		87D02EBF28BDF5A7008045DA /* ResultView */ = {
+			isa = PBXGroup;
+			children = (
+				87D02EC028BDF5C2008045DA /* ResultView.swift */,
+			);
+			path = ResultView;
+			sourceTree = "<group>";
+		};
+		87D02EC228BE6AEF008045DA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				87D02ED128BE93DD008045DA /* DetectMedicine.mlmodel */,
+				87D02EC928BE6F29008045DA /* DetectMedicineModel.swift */,
+				87D02ED328BE9EDD008045DA /* ImagePredictor.swift */,
+				87C2EC9F28BFC84900D83D04 /* Storage.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A70B44AB1B36EB2102EF3B00 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				53B6F4235AAFA943DBAD2834 /* Pods-DetectMedicine.debug.xcconfig */,
+				DABF5AC5DE5610F937D9DAB2 /* Pods-DetectMedicine.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +181,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 87B62C7828B9E944006E3C31 /* Build configuration list for PBXNativeTarget "DetectMedicine" */;
 			buildPhases = (
+				D1E5FBB181EB24E0194A2157 /* [CP] Check Pods Manifest.lock */,
 				87B62C6028B9E943006E3C31 /* Sources */,
 				87B62C6128B9E943006E3C31 /* Frameworks */,
 				87B62C6228B9E943006E3C31 /* Resources */,
+				0589AD23306C4AF985A2286F /* [CP] Embed Pods Frameworks */,
+				92E0B26AE8EE7EDBAD8EDB71 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -125,13 +235,73 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				87C2EC9A28BFC35200D83D04 /* FirstPage.storyboard in Resources */,
 				87B62C7428B9E944006E3C31 /* LaunchScreen.storyboard in Resources */,
-				87B62C7128B9E944006E3C31 /* Assets.xcassets in Resources */,
+				87C2EC9728BF4A6D00D83D04 /* Assets.xcassets in Resources */,
 				87B62C6F28B9E943006E3C31 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0589AD23306C4AF985A2286F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DetectMedicine/Pods-DetectMedicine-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DetectMedicine/Pods-DetectMedicine-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DetectMedicine/Pods-DetectMedicine-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		92E0B26AE8EE7EDBAD8EDB71 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DetectMedicine/Pods-DetectMedicine-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DetectMedicine/Pods-DetectMedicine-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DetectMedicine/Pods-DetectMedicine-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D1E5FBB181EB24E0194A2157 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DetectMedicine-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		87B62C6028B9E943006E3C31 /* Sources */ = {
@@ -139,8 +309,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				87B62C6C28B9E943006E3C31 /* ViewController.swift in Sources */,
+				87C2ECA028BFC84900D83D04 /* Storage.swift in Sources */,
+				87D02EC128BDF5C2008045DA /* ResultView.swift in Sources */,
+				87C2EC9C28BFC4AA00D83D04 /* FirstPageViewController.swift in Sources */,
 				87B62C6828B9E943006E3C31 /* AppDelegate.swift in Sources */,
+				87D02ECE28BE8FFD008045DA /* VNClassificationObsefvation.swift in Sources */,
+				87D02ECA28BE6F29008045DA /* DetectMedicineModel.swift in Sources */,
+				87D02ED228BE93DD008045DA /* DetectMedicine.mlmodel in Sources */,
 				87B62C6A28B9E943006E3C31 /* SceneDelegate.swift in Sources */,
+				87D02ED428BE9EDD008045DA /* ImagePredictor.swift in Sources */,
+				87D02ECC28BE8F51008045DA /* CGImagePropertyOrientation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,9 +462,11 @@
 		};
 		87B62C7928B9E944006E3C31 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 53B6F4235AAFA943DBAD2834 /* Pods-DetectMedicine.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 7JPPWR5997;
@@ -312,9 +492,11 @@
 		};
 		87B62C7A28B9E944006E3C31 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DABF5AC5DE5610F937D9DAB2 /* Pods-DetectMedicine.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 7JPPWR5997;

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--First Page View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="FirstPageViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" customClass="FirstPageViewController" customModule="DetectMedicine" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="약 인식 기능" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qek-jq-mfI">
+                                <rect key="frame" x="135.5" y="149" width="143" height="36"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Pill" translatesAutoresizingMaskIntoConstraints="NO" id="aSP-r7-Foq">
+                                <rect key="frame" x="147.5" y="225" width="119" height="125"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="약 상자를 촬영하면 결과를 알려드립니다." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7LJ-nL-kAG">
+                                <rect key="frame" x="10" y="380" width="394" height="60"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="이약머약은 어떠한 정보도 수집하지 않습니다." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vEb-aG-led">
+                                <rect key="frame" x="10" y="470" width="394" height="55"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gmw-MF-dba">
+                                <rect key="frame" x="30" y="742" width="354" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="6Hq-mV-Jee"/>
+                                </constraints>
+                                <color key="tintColor" red="0.29019607843137252" green="0.37254901960784315" blue="0.6588235294117647" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="시작하기">
+                                    <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="30"/>
+                                    <color key="baseBackgroundColor" red="0.29019607843137252" green="0.37254901960784315" blue="0.6588235294117647" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="didTapStartButton" destination="Y6W-OH-hqX" eventType="touchUpInside" id="cZ6-HK-fJr"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" red="0.94117647058823528" green="0.92549019607843142" blue="0.8901960784313725" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="qek-jq-mfI" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="105" id="5RS-fM-KBz"/>
+                            <constraint firstItem="7LJ-nL-kAG" firstAttribute="top" secondItem="aSP-r7-Foq" secondAttribute="bottom" constant="30" id="C4N-JM-ml6"/>
+                            <constraint firstItem="aSP-r7-Foq" firstAttribute="top" secondItem="qek-jq-mfI" secondAttribute="bottom" constant="40" id="Got-eH-BUc"/>
+                            <constraint firstItem="7LJ-nL-kAG" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="10" id="LdS-zj-kPZ"/>
+                            <constraint firstItem="aSP-r7-Foq" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="Nf4-uq-KTV"/>
+                            <constraint firstItem="Gmw-MF-dba" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="Tav-pk-ctp"/>
+                            <constraint firstItem="Gmw-MF-dba" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="30" id="YJ4-F0-LD0"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Gmw-MF-dba" secondAttribute="trailing" constant="30" id="lZy-Yy-R3n"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="Gmw-MF-dba" secondAttribute="bottom" constant="50" id="mHQ-hx-6hR"/>
+                            <constraint firstItem="vEb-aG-led" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="10" id="mcP-ox-nBg"/>
+                            <constraint firstAttribute="trailing" secondItem="vEb-aG-led" secondAttribute="trailing" constant="10" id="qYA-t4-Nq9"/>
+                            <constraint firstItem="qek-jq-mfI" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="vjo-HO-CWw"/>
+                            <constraint firstAttribute="trailing" secondItem="7LJ-nL-kAG" secondAttribute="trailing" constant="10" id="w14-MZ-uQ5"/>
+                            <constraint firstItem="vEb-aG-led" firstAttribute="top" secondItem="7LJ-nL-kAG" secondAttribute="bottom" constant="30" id="wgv-va-j8E"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="descriptions" destination="qek-jq-mfI" id="IVa-Ti-Yoj"/>
+                        <outlet property="startButton" destination="Gmw-MF-dba" id="o3a-dq-euh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="92"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Pill" width="119" height="125"/>
+    </resources>
+</document>
