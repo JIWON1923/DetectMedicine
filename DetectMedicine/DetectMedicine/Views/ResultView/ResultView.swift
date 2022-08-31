@@ -14,7 +14,8 @@ class ResultView: UIView {
        let label = UILabel()
         label.numberOfLines = 0
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.text = "description\ndescription\ndescription\ndescription\ndescription\ndescription\ndescription\ndescription\ndescription\ndescription\ndescription\ndescription\ndescription\ndescription\ndescription\ndescription\ndescription\ndescription\ndescription\ndescription\ndescription\ndescription\ndescription\n"
+        label.text = ""
+        label.font = UIFont.systemFont(ofSize: 20)
         return label
     }()
     
