@@ -9,6 +9,7 @@ import UIKit
 import AVFoundation
 import MLKitTextRecognitionKorean
 import MLKit
+import CoreTelephony
 
 class ViewController: UIViewController {
     
@@ -78,12 +79,28 @@ class ViewController: UIViewController {
         case .restricted:
             break
         case .denied:
+            deniedPermission()
             break
         case .authorized:
             setUpCamera()
         @unknown default:
             break
      
+        }
+    }
+    
+    private func deniedPermission() {
+        DispatchQueue.main.async {
+            let alert = UIAlertController(title: "카메라 접근 권한 설정하러 가기", message: "이약머약은 사용자의 어떠한 정보도 수집하지 않습니다. ", preferredStyle: .alert)
+            let yes = UIAlertAction(title: "이동하기", style: .default) { completion in
+                if let url = URL(string: UIApplication.openSettingsURLString) {
+                    UIApplication.shared.open(url, options: [:], completionHandler: nil)
+                }
+            }
+            let no = UIAlertAction(title: "취소", style: .destructive, handler: nil)
+            alert.addAction(yes)
+            alert.addAction(no)
+            self.present(alert, animated: true, completion: nil)
         }
     }
     
