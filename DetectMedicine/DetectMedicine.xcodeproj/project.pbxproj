@@ -12,6 +12,7 @@
 		87B62C6C28B9E943006E3C31 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B62C6B28B9E943006E3C31 /* ViewController.swift */; };
 		87B62C6F28B9E943006E3C31 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87B62C6D28B9E943006E3C31 /* Main.storyboard */; };
 		87B62C7428B9E944006E3C31 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87B62C7228B9E944006E3C31 /* LaunchScreen.storyboard */; };
+		87C2EC9728BF4A6D00D83D04 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87B62C7028B9E944006E3C31 /* Assets.xcassets */; };
 		87D02EC128BDF5C2008045DA /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D02EC028BDF5C2008045DA /* ResultView.swift */; };
 		87D02ECA28BE6F29008045DA /* DetectMedicineModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D02EC928BE6F29008045DA /* DetectMedicineModel.swift */; };
 		87D02ECC28BE8F51008045DA /* CGImagePropertyOrientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D02ECB28BE8F51008045DA /* CGImagePropertyOrientation.swift */; };
@@ -218,6 +219,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				87B62C7428B9E944006E3C31 /* LaunchScreen.storyboard in Resources */,
+				87C2EC9728BF4A6D00D83D04 /* Assets.xcassets in Resources */,
 				87B62C6F28B9E943006E3C31 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -444,6 +446,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 7JPPWR5997;
@@ -473,6 +476,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 7JPPWR5997;
