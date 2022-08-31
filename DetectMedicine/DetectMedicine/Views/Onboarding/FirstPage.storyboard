@@ -72,6 +72,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="descriptions" destination="qek-jq-mfI" id="IVa-Ti-Yoj"/>
                         <outlet property="startButton" destination="Gmw-MF-dba" id="o3a-dq-euh"/>
                     </connections>
                 </viewController>
