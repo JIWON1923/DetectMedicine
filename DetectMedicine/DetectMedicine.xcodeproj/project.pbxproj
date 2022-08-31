@@ -13,6 +13,9 @@
 		87B62C6F28B9E943006E3C31 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87B62C6D28B9E943006E3C31 /* Main.storyboard */; };
 		87B62C7428B9E944006E3C31 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87B62C7228B9E944006E3C31 /* LaunchScreen.storyboard */; };
 		87C2EC9728BF4A6D00D83D04 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87B62C7028B9E944006E3C31 /* Assets.xcassets */; };
+		87C2EC9A28BFC35200D83D04 /* FirstPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87C2EC9928BFC35200D83D04 /* FirstPage.storyboard */; };
+		87C2EC9C28BFC4AA00D83D04 /* FirstPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87C2EC9B28BFC4AA00D83D04 /* FirstPageViewController.swift */; };
+		87C2ECA028BFC84900D83D04 /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87C2EC9F28BFC84900D83D04 /* Storage.swift */; };
 		87D02EC128BDF5C2008045DA /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D02EC028BDF5C2008045DA /* ResultView.swift */; };
 		87D02ECA28BE6F29008045DA /* DetectMedicineModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D02EC928BE6F29008045DA /* DetectMedicineModel.swift */; };
 		87D02ECC28BE8F51008045DA /* CGImagePropertyOrientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D02ECB28BE8F51008045DA /* CGImagePropertyOrientation.swift */; };
@@ -32,6 +35,9 @@
 		87B62C7028B9E944006E3C31 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		87B62C7328B9E944006E3C31 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		87B62C7528B9E944006E3C31 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		87C2EC9928BFC35200D83D04 /* FirstPage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FirstPage.storyboard; sourceTree = "<group>"; };
+		87C2EC9B28BFC4AA00D83D04 /* FirstPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstPageViewController.swift; sourceTree = "<group>"; };
+		87C2EC9F28BFC84900D83D04 /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
 		87D02EC028BDF5C2008045DA /* ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultView.swift; sourceTree = "<group>"; };
 		87D02EC928BE6F29008045DA /* DetectMedicineModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetectMedicineModel.swift; sourceTree = "<group>"; };
 		87D02ECB28BE8F51008045DA /* CGImagePropertyOrientation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGImagePropertyOrientation.swift; sourceTree = "<group>"; };
@@ -117,6 +123,7 @@
 				87B62C7228B9E944006E3C31 /* LaunchScreen.storyboard */,
 				87B62C7B28BA0916006E3C31 /* MainView */,
 				87D02EBF28BDF5A7008045DA /* ResultView */,
+				87C2EC9828BFC32900D83D04 /* Onboarding */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -128,6 +135,15 @@
 				87D02ECD28BE8FFD008045DA /* VNClassificationObsefvation.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		87C2EC9828BFC32900D83D04 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				87C2EC9928BFC35200D83D04 /* FirstPage.storyboard */,
+				87C2EC9B28BFC4AA00D83D04 /* FirstPageViewController.swift */,
+			);
+			path = Onboarding;
 			sourceTree = "<group>";
 		};
 		87D02EBF28BDF5A7008045DA /* ResultView */ = {
@@ -144,6 +160,7 @@
 				87D02ED128BE93DD008045DA /* DetectMedicine.mlmodel */,
 				87D02EC928BE6F29008045DA /* DetectMedicineModel.swift */,
 				87D02ED328BE9EDD008045DA /* ImagePredictor.swift */,
+				87C2EC9F28BFC84900D83D04 /* Storage.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -218,6 +235,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				87C2EC9A28BFC35200D83D04 /* FirstPage.storyboard in Resources */,
 				87B62C7428B9E944006E3C31 /* LaunchScreen.storyboard in Resources */,
 				87C2EC9728BF4A6D00D83D04 /* Assets.xcassets in Resources */,
 				87B62C6F28B9E943006E3C31 /* Main.storyboard in Resources */,
@@ -291,7 +309,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				87B62C6C28B9E943006E3C31 /* ViewController.swift in Sources */,
+				87C2ECA028BFC84900D83D04 /* Storage.swift in Sources */,
 				87D02EC128BDF5C2008045DA /* ResultView.swift in Sources */,
+				87C2EC9C28BFC4AA00D83D04 /* FirstPageViewController.swift in Sources */,
 				87B62C6828B9E943006E3C31 /* AppDelegate.swift in Sources */,
 				87D02ECE28BE8FFD008045DA /* VNClassificationObsefvation.swift in Sources */,
 				87D02ECA28BE6F29008045DA /* DetectMedicineModel.swift in Sources */,
