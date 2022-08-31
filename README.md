@@ -40,9 +40,9 @@ Insert gif or link to demo
 - <img src="https://img.shields.io/badge/figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white"/>
 
 
-## :books: Documentation
+## :books: PRD
 
-[Documentation](https://linktodocumentation)
+[Documentation](https://www.notion.so/PRD-Product-Requirement-Document-305b70e39d914ae8a8899be5350e19c3)
 
 
 ## :lock_with_ink_pen: License
