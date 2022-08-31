@@ -1,4 +1,4 @@
-![Logo](https://dummyimage.com/1000x300/000/fff.png)
+![Logo](https://user-images.githubusercontent.com/68676844/187777482-f04f7abf-f918-4d91-a7a3-f620c64b6468.png)
 
 
 # :iphone: 이약머약
@@ -28,12 +28,9 @@ Insert gif or link to demo
 
 ## :fireworks: Screenshots
 
-![App Screenshot](https://dummyimage.com/250x500/000/fff.png)
-![App Screenshot](https://dummyimage.com/250x500/000/fff.png)
-![App Screenshot](https://dummyimage.com/250x500/000/fff.png)
-![App Screenshot](https://dummyimage.com/250x500/000/fff.png)
-![App Screenshot](https://dummyimage.com/250x500/000/fff.png)
-![App Screenshot](https://dummyimage.com/250x500/000/fff.png)
+|Onboarding|MainView|MainView|
+|---|---|---|
+|![App Screenshot](https://user-images.githubusercontent.com/68676844/187777879-2fb8a8c9-cdf9-47b7-a4cf-af5f01075260.PNG)|![App Screenshot](https://user-images.githubusercontent.com/68676844/187777866-2c0cb5f1-fc1d-4ead-9a35-8d2ce4ef88cd.PNG)|![App Screenshot](https://user-images.githubusercontent.com/68676844/187777877-67074de5-4846-4c36-9406-fb001283c1e0.PNG)
 
 
 ## :sparkles: Skills & Tech Stack
