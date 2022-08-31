@@ -42,7 +42,7 @@ Insert gif or link to demo
 
 ## :books: PRD
 
-[Documentation](https://www.notion.so/PRD-Product-Requirement-Document-305b70e39d914ae8a8899be5350e19c3)
+[Product Requirement Document.pdf](https://github.com/JIWON1923/DetectMedicine/files/9465069/PRD_.Product_Requirement_Document.pdf)
 
 
 ## :lock_with_ink_pen: License
