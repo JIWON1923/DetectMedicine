@@ -1,4 +1,4 @@
-![LOGO](https://user-images.githubusercontent.com/68676844/187838156-e0986705-98d6-4852-b535-2bf17a411bb6.png)
+![LOGO](https://user-images.githubusercontent.com/68676844/187859492-6987c700-ceeb-45b2-87e2-4b56354affa1.png)
 
 # :iphone: 이약머약
 
