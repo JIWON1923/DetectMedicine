@@ -11,11 +11,13 @@
 - 시각장애인은 복약할 때마다, 다른 사람에게 도움을 요청하거나, 약을 랜덤으로 먹는 경우도 존재합니다.
 - 점자의 규격이 정해져있지 않아서 점자의 실효성이 매우 떨어진다고 합니다.
 
+그래서 약의 사진을 촬영하면, 약의 종류, 복약 방법, 효과, 부작용 정보를 보이스오버로 알려줄 수 있는 어플리케이션을 개발하고자 했습니다.
 
 > Of the 5,474 drugs sold in Korea, only 94 are marked with braille.<br>
 > - Every time a visually impaired person takes a medication, there are cases where they ask for help from others or take medicine randomly.
-> - In addition, Braille drugs are also not very effective because there are no standards for braille.
+> - In addition, Braille drugs are also not very effective because there are no standards for braille. <br>
 
+> - So I wanted to develop an application that can tell you the type of medicine, how to take it, the effect, and the side effect information through voice over when you take a picture of the medicine.
 
 ## :pushpin: Features
 
