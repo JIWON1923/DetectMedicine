@@ -39,7 +39,7 @@ Insert gif or link to demo
 
 
 ## :books: PRD
-<a href="https://regal-lamb-56a.notion.site/PRD-Product-Requirement-Document-bdde49ab1ea044eab27d460fc9451f03"><img src="https://img.shields.io/badge/PRD-000000?style=for-the-badge&logo=notion&logoColor=white"/>
+<a href="https://dev-soi.notion.site/Nano-Challenge-2-d67fbb7f446142ec8db1a1a3fcc48dbf"><img src="https://img.shields.io/badge/PRD-000000?style=for-the-badge&logo=notion&logoColor=white"/>
 
 
 ## :sparkles: Skills & Tech Stack
