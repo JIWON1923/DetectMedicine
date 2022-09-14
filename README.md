@@ -1,20 +1,20 @@
 ![LOGO](https://user-images.githubusercontent.com/68676844/187859492-6987c700-ceeb-45b2-87e2-4b56354affa1.png)
 
-# :iphone: 이약머약
-
+## 💁‍♀️ Summary
 - 시각장애인의 안전한 약 복용을 돕는 앱입니다.
-
-> **_개발 배경:_**
-> 2020년 기준 한국 일반의약품 5,474개 중 점자가 표기된 약은 94개에 불과합니다.
-> 이에 시각장애인은 약 복용 시 보호자의 도움을 필요로 하거나, 약을 랜덤으로 먹는 경우도 존재합니다.
-> 보장받지 못하는 시각장애인의 보건 의료 서비스 접근성에 조금이나마 도움이 되었으면 좋겠습니다.
+> It is a project that helps visually impaired people take medicine safely.
 
 
-> **_점자 표기 의무화:_**
-> 2024년 7월 21일부터 의약외품에 점자, 음성 및 수어 영상 변환용 코드 부착이 의무화되지만, 현재는 많은 한계점이 존재합니다
+## 📄 Research
+2020년 일반 의약품 5,474개 중 점자가 표기된 약은 94개에 불과하다.
+    
+- 시각장애인은 복약할 때마다, 다른 사람에게 도움을 요청하거나, 약을 랜덤으로 먹는 경우도 존재합니다.
+- 점자의 규격이 정해져있지 않아서 점자의 실효성이 매우 떨어진다고 합니다.
 
-> 이약머약을 실행하고, 카메라로 약의 사진을 촬영하면, 약의 종류 및 정보를 출력합니다. (voiceover 적용)
-> 추후, 유통기한을 확인하는 기능을 추가할 예정입니다.
+
+> Of the 5,474 drugs sold in Korea, only 94 are marked with braille.<br>
+> - Every time a visually impaired person takes a medication, there are cases where they ask for help from others or take medicine randomly.
+> - In addition, Braille drugs are also not very effective because there are no standards for braille.
 
 
 ## :pushpin: Features
@@ -36,16 +36,15 @@ Insert gif or link to demo
 |![App Screenshot](https://user-images.githubusercontent.com/68676844/187777879-2fb8a8c9-cdf9-47b7-a4cf-af5f01075260.PNG)|![App Screenshot](https://user-images.githubusercontent.com/68676844/187777866-2c0cb5f1-fc1d-4ead-9a35-8d2ce4ef88cd.PNG)|![App Screenshot](https://user-images.githubusercontent.com/68676844/187777877-67074de5-4846-4c36-9406-fb001283c1e0.PNG)
 
 
+## :books: PRD
+<a href="https://regal-lamb-56a.notion.site/PRD-Product-Requirement-Document-bdde49ab1ea044eab27d460fc9451f03"><img src="https://img.shields.io/badge/PRD-000000?style=for-the-badge&logo=notion&logoColor=white"/>
+
+
 ## :sparkles: Skills & Tech Stack
 - <img src="https://img.shields.io/badge/swift-F05138?style=for-the-badge&logo=swift&logoColor=white"/>
 - <img src="https://img.shields.io/badge/create%20ml-40929B?style=for-the-badge&logo=createml&logoColor=white"/>
 - <img src="https://img.shields.io/badge/ml%20kit-4285F4?style=for-the-badge&logo=google&logoColor=white"/>
 - <img src="https://img.shields.io/badge/figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white"/>
-
-
-## :books: PRD
-
-[Product Requirement Document.pdf](https://github.com/JIWON1923/DetectMedicine/files/9465069/PRD_.Product_Requirement_Document.pdf)
 
 
 ## :lock_with_ink_pen: License
